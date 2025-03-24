@@ -9,4 +9,9 @@ resource "aws_subnet" "public" {
   cidr_block = "15.15.0.0/24"
   tags = { Name = "public_subnet" }
 }
+resource "aws_subnet" "private" {
+  vpc_id = "aws_vpc.myvpc.id"
+  cidr_block = "15.15.1.0/24"
+  tags = { Name = "private_subnet" }
+}
 
