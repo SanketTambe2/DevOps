@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "jenkins" {
-  ami           = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI (Change as needed)
+  ami           = "ami-00a929b66ed6e0de6"  # Amazon Linux 2 AMI (Change as needed)
   instance_type = "t2.micro"
   key_name      = "your-key-name"  # Replace with your key pair name
   subnet_id     = "subnet-xxxxxxxx"  # Replace with your subnet ID
